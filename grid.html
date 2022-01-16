@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .wraper {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        color: white;
+      }
+      .one {
+        background-color: yellow;
+        grid-column: 1/3;
+        grid-row: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .two {
+        background-color: cadetblue;
+        grid-column: 2/4;
+        grid-row: 1/3;
+      }
+      .three {
+        background-color: chartreuse;
+        grid-column: 1;
+        grid-row: 2/5;
+      }
+      .four {
+        background-color: coral;
+        grid-column: 3;
+        grid-row: 3;
+      }
+      .five {
+        background-color: crimson;
+        grid-column: 2;
+        grid-row: 4;
+      }
+      .six {
+        background-color: darkcyan;
+        grid-column: 3;
+        grid-row: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wraper">
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div class="three">Three</div>
+      <div class="four">Four</div>
+      <div class="five">Five</div>
+      <div class="six">Six</div>
+    </div>
+  </body>
+</html>
